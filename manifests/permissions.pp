@@ -41,6 +41,13 @@ class piwik::permissions(
     mode   => '0755',
   }
 
+  file { "${install_dir}/piwik/plugins":
+    ensure => directory,
+    owner  => $web_user,
+    group  => $web_user,
+    mode   => '0755',
+  }
+
   file { $tmp_dirs:
     ensure => directory,
     owner  => $web_user,
