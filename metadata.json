@@ -1,0 +1,61 @@
+{
+  "name": "bflad-piwik",
+  "version": "0.1.0",
+  "author": "Brian Flad",
+  "summary": "Piwik module",
+  "license": "Apache 2.0",
+  "source": "git://github.com/bflad/puppet-piwik.git",
+  "project_page": "http://github.com/bflad/puppet-piwik",
+  "issues_url": "https://github.com/bflad/puppet-piwik/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": ">= 3.2.0 < 3.4.0"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
+  "description": "Piwik module",
+  "dependencies": [
+    {
+      "name": "puppetlabs/apache",
+      "version_requirement": ">= 1.1.1"
+    },
+    {
+      "name": "stahnma/epel",
+      "version_requirement": ">= 0.0.6"
+    },
+    {
+      "name": "rodjek/logrotate",
+      "version_requirement": ">= 1.1.1"
+    },
+    {
+      "name": "puppetlabs/mysql",
+      "version_requirement": ">= 2.3.1"
+    },
+    {
+      "name": "example42/php",
+      "version_requirement": ">= 2.0.18"
+    },
+    {
+      "name": "maestrodev/wget",
+      "version_requirement": ">= 1.3.2"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+---
+:hierarchy:
+    # START - TEMPORARY FIX until Puppetlabs releases Vagrant box with Puppet 3.2+
+    - piwik/%{env}
+    - piwik/common
+    - mysql/%{env}
+    - mysql/common
+    # END - TEMPORARY FIX until Puppetlabs releases Vagrant box with Puppet 3.2+
+    - %{calling_module}/%{env}
+    - %{calling_module}/common
+    - %{::env}
+    - common
+:backends:
+    - yaml
+:yaml:
+    :datadir: 'data'
