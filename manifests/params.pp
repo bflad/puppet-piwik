@@ -52,6 +52,6 @@ class piwik::params {
     "${install_dir}/piwik/tmp/templates_c"
   ]
   $url      = 'http://builds.piwik.org'
-  $version  = '2.6.1'
+  $version  = '2.7.0'
   $web_user = 'apache'
 }
